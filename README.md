@@ -77,14 +77,14 @@ Ensure the following are installed on your system:
 
 ## Running the Tests
 
-    - **Execute All Tests**
+    - Execute All Tests
         npx playwright test
 
-    - **Run Specific Test Suite**
+    - Run Specific Test Suite
         npx playwright test tests/loginTest.spec.js
         npx playwright test tests/tasksTest.spec.js
 
-    - **View Reports**
+    - View Reports
         Upon execution, an HTML report will be generated. Open the report with:
         npx playwright show-report
 
