@@ -41,14 +41,14 @@ Ensure the following are installed on your system:
 ## Setup and Installation
 
 - **Clone the Repository**  
-```bash  
-git clone https://github.com/VaishaliQA/Automated_Asana_Demo_App_LoopQA_Assessments.git```  
+bash  
+git clone https://github.com/VaishaliQA/Automated_Asana_Demo_App_LoopQA_Assessments.git 
 
 cd Automated_Asana_Demo_App_LoopQA_Assessments  
 
 - **Install Dependencies**
-```bash
-npm install```
+bash
+npm install
 
 - **Set Up Environment Variables**
 - Create a .env file in the project root.
@@ -75,18 +75,18 @@ PLAYWRIGHT_PASSWORD=your_password
 ## Running the Tests
 
 - Execute All Tests
-```bash
-npx playwright test```
+bash
+npx playwright test
 
 - Run Specific Test Suite
-```bash
+bash
 npx playwright test tests/loginTest.spec.js
-npx playwright test tests/tasksTest.spec.js```
+npx playwright test tests/tasksTest.spec.js
 
 - View Reports
 Upon execution, an HTML report will be generated. Open the report with:
-```bash
-npx playwright show-report```
+bash
+npx playwright show-report
 
 ## Key Highlights
 
