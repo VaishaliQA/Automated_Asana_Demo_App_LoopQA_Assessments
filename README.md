@@ -1,4 +1,4 @@
-# Automated Asana Demo App – Playwright Automation Project  
+# Automated Asana App Testing using Playwright  
 
 This repository contains an automation framework for verifying login and task functionality of the **Asana Demo App**. The framework is built using **Playwright** with **JavaScript**, following the **Page Object Model (POM)** design pattern for maintainable and scalable test automation.  
 
@@ -40,22 +40,19 @@ Ensure the following are installed on your system:
 
 ## Setup and Installation
 
-- **Clone the Repository**  
-bash  
-git clone https://github.com/VaishaliQA/Automated_Asana_Demo_App_LoopQA_Assessments.git 
-
+- **Clone the Repository**   
+git clone https://github.com/VaishaliQA/Automated_Asana_Demo_App_LoopQA_Assessments.git
 cd Automated_Asana_Demo_App_LoopQA_Assessments  
 
 - **Install Dependencies**
-bash
 npm install
 
 - **Set Up Environment Variables**
-- Create a .env file in the project root.
-- Add your credentials as shown below:
-env
-PLAYWRIGHT_USERNAME=your_username
-PLAYWRIGHT_PASSWORD=your_password
+ - Create a .env file in the project root.
+ - Add your credentials as shown below:
+    env
+    PLAYWRIGHT_USERNAME=your_username
+    PLAYWRIGHT_PASSWORD=your_password
 
 ## Project Structure
 
@@ -75,18 +72,15 @@ PLAYWRIGHT_PASSWORD=your_password
 ## Running the Tests
 
 - Execute All Tests
-bash
-npx playwright test
+    npx playwright test
 
 - Run Specific Test Suite
-bash
-npx playwright test tests/loginTest.spec.js
-npx playwright test tests/tasksTest.spec.js
+    npx playwright test tests/loginTest.spec.js
+    npx playwright test tests/tasksTest.spec.js
 
 - View Reports
-Upon execution, an HTML report will be generated. Open the report with:
-bash
-npx playwright show-report
+    Upon execution, an HTML report will be generated. Open the report with:
+    npx playwright show-report
 
 ## Key Highlights
 
@@ -98,17 +92,16 @@ npx playwright show-report
 ## Recommendations for Improvement
 
 - **Session Persistence**
-Save login session for reuse across tests to reduce redundant logins.
+    Save login session for reuse across tests to reduce redundant logins.
 
 - **Cross-Browser Testing**
-Extend testing to Chrome, Firefox, and Safari for compatibility validation.
+    Extend testing to Chrome, Firefox, and Safari for compatibility validation.
 
 - **Edge Case Coverage**
-Test error handling, invalid inputs, and boundary scenarios.
+    Test error handling, invalid inputs, and boundary scenarios.
 
 - **Enhanced Reporting**
-Integrate with tools like Allure Reports for advanced report generation and Slack for real-time notifications.
+    Integrate with tools like Allure Reports for advanced report generation and Slack for real-time notifications.
 
 ## License
-
-- This project is licensed under the MIT License.
+    This project is licensed under the MIT License.
