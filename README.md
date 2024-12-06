@@ -41,46 +41,52 @@ Ensure the following are installed on your system:
 ## Setup and Installation
 
 - **Clone the Repository**   
-git clone https://github.com/VaishaliQA/Automated_Asana_Demo_App_LoopQA_Assessments.git
-cd Automated_Asana_Demo_App_LoopQA_Assessments  
+        git clone https://github.com/VaishaliQA/Automated_Asana_Demo_App_LoopQA_Assessments.git
+        cd Automated_Asana_Demo_App_LoopQA_Assessments  
 
 - **Install Dependencies**
-npm install
+        npm install
 
 - **Set Up Environment Variables**
- - Create a .env file in the project root.
- - Add your credentials as shown below:
-    env
-    PLAYWRIGHT_USERNAME=your_username
-    PLAYWRIGHT_PASSWORD=your_password
+        - Create a .env file in the project root.
+        - Add your credentials as shown below:
+            env
+            PLAYWRIGHT_USERNAME=your_username
+            PLAYWRIGHT_PASSWORD=your_password
 
 ## Project Structure
 
-├── pageObjects/            # Page Object Model classes  
-│   ├── LoginPage.js        # Handles login interactions  
-│   └── ApplicationPage.js  # Manages tasks and navigation  
-├── tests/                  # Test files  
-│   ├── loginTest.spec.js   # Tests login functionality  
-│   └── tasksTest.spec.js   # Verifies tasks and tags  
-├── testData/               # Test data for dynamic testing  
-│   └── testData.json       # JSON file containing tasks and tags  
-├── playwright.config.js    # Playwright configuration file  
-├── .env                    # Environment variables  
-├── package.json            # Project dependencies and scripts  
-└── README.md               # Project documentation  
+    ├── pageObjects/            # Page Object Model classes  
+    │   ├── LoginPage.js        # Handles login interactions  
+    │   └── ApplicationPage.js  # Manages tasks and navigation  
+
+    ├── tests/                  # Test files  
+    │   ├── loginTest.spec.js   # Tests login functionality  
+    │   └── tasksTest.spec.js   # Verifies tasks and tags  
+
+    ├── testData/               # Test data for dynamic testing  
+    │   └── testData.json       # JSON file containing tasks and tags  
+
+    ├── playwright.config.js    # Playwright configuration file  
+
+    ├── .env                    # Environment variables  
+
+    ├── package.json            # Project dependencies and scripts  
+
+    └── README.md               # Project documentation  
 
 ## Running the Tests
 
-- Execute All Tests
-    npx playwright test
+    - Execute All Tests
+        npx playwright test
 
-- Run Specific Test Suite
-    npx playwright test tests/loginTest.spec.js
-    npx playwright test tests/tasksTest.spec.js
+    - Run Specific Test Suite
+        npx playwright test tests/loginTest.spec.js
+        npx playwright test tests/tasksTest.spec.js
 
-- View Reports
-    Upon execution, an HTML report will be generated. Open the report with:
-    npx playwright show-report
+    - View Reports
+        Upon execution, an HTML report will be generated. Open the report with:
+        npx playwright show-report
 
 ## Key Highlights
 
